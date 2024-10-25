@@ -1,0 +1,111 @@
+.chatroom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  .chatbox {
+    width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  /* Adjust the input layout */
+  .chat-inputs {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .chat-inputs input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  
+  .chat-inputs button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .chat-inputs button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Emoji button */
+  .chat-inputs button:nth-child(3) {
+    background-color: #ffcc00;
+  }
+  
+  .chat-inputs button:nth-child(3):hover {
+    background-color: #e6b800;
+  }
+  
+  /* Chat window styling */
+  .chat-window {
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+  
+  .chat-message {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .own-message {
+    background-color: #d1ffd1;
+    align-self: flex-end;
+  }
+  
+  .chat-message-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .username {
+    margin-right: 5px; /* Add some space between username and timestamp */
+  }
+  
+  .timestamp {
+    margin-left: 5px; /* Ensure a small space between 'at' and the timestamp */
+  }
+  
+  .chat-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .typing-indicator {
+    font-style: italic;
+    color: gray;
+  }
+  
+  /* Adjust button styles */
+  button {
+    cursor: pointer;
+  }
